@@ -13,7 +13,7 @@
   3. Paste the values into CONFIG below and into the script URL.
   4. Test with sandbox credentials first, then switch to live.
 -->
-<script src="https://www.paypal.com/sdk/js?client-id=Af5EVauG1w5LetCgqZTiAKSlv3pI9EVHIagrzf65c6ipiH8jiEFWNU1DHqS27a_qgQkRG4lphsvjOFhI&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=Af5EVauG1w5LetCgqZTiAKSlv3pI9EVHIagrzf65c6ipiH8jiEFWNU1DHqS27a_qgQkRG4lphsvjOFhI&vault=true&intent=subscription&currency=CHF" data-sdk-integration-source="button-factory"></script>
 
 <style>
   :root {
@@ -73,7 +73,7 @@
   </div>
 
   <div class="price">
-    <span class="amount" id="amount">$6.00</span>
+    <span class="amount" id="amount">CHF 6.00</span>
     <span class="period" id="period">/ month</span>
   </div>
   <p class="note" id="note"></p>
@@ -85,16 +85,16 @@
   </ul>
 
   <div id="paypal-button-container"></div>
-  <p class="alt">Button not showing? <a id="paypal-link" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-0DM13127GA094943RMJEDYAY" target="_blank" rel="noopener">Subscribe directly on PayPal</a></p>
+  <p class="alt">Button not showing? <a id="paypal-link" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-9A7408758Y077321TNLF367A" target="_blank" rel="noopener">Subscribe directly on PayPal</a></p>
   <div class="msg" id="msg"></div>
 </main>
 
 <script>
   // ===== CONFIG: edit these =====
   const CONFIG = {
-    currencySymbol: "$",
-    monthly: { planId: "P-0DM13127GA094943RMJEDYAY", price: 6.00 },
-    yearly:  { planId: "P-YEARLY_PLAN_ID",  price: 50.00 }
+    currencySymbol: "CHF ",
+    monthly: { planId: "P-9A7408758Y077321TNLF367A", price: 6.00 },
+    yearly:  { planId: "P-7R818960PF594525PNLF37ZA", price: 50.00 }
   };
   // ==============================
 
